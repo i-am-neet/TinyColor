@@ -10,6 +10,243 @@
 	<script type='text/javascript' src='tinycolor.js'></script>
 	<script type='text/javascript'>
 
+		function color100() {
+			// Create from https://mokole.com/palette.html
+			/*
+			var tinyArr = [
+				tinycolor('#000000'),
+				tinycolor('#808080'),
+				tinycolor('#a9a9a9'),
+				tinycolor('#d3d3d3'),
+				tinycolor('#ffffff'),
+				tinycolor('#2f4f4f'),
+				tinycolor('#556b2f'),
+				tinycolor('#6b8e23'),
+				tinycolor('#a0522d'),
+				tinycolor('#a52a2a'),
+				tinycolor('#2e8b57'),
+				tinycolor('#800000'),
+				tinycolor('#191970'),
+				tinycolor('#006400'),
+				tinycolor('#708090'),
+				tinycolor('#808000'),
+				tinycolor('#483d8b'),
+				tinycolor('#b22222'),
+				tinycolor('#5f9ea0'),
+				tinycolor('#008000'),
+				tinycolor('#3cb371'),
+				tinycolor('#bc8f8f'),
+				tinycolor('#663399'),
+				tinycolor('#008080'),
+				tinycolor('#b8860b'),
+				tinycolor('#bdb76b'),
+				tinycolor('#cd853f'),
+				tinycolor('#4682b4'),
+				tinycolor('#d2691e'),
+				tinycolor('#9acd32'),
+				tinycolor('#20b2aa'),
+				tinycolor('#cd5c5c'),
+				tinycolor('#00008b'),
+				tinycolor('#4b0082'),
+				tinycolor('#32cd32'),
+				tinycolor('#daa520'),
+				tinycolor('#7f007f'),
+				tinycolor('#8fbc8f'),
+				tinycolor('#b03060'),
+				tinycolor('#d2b48c'),
+				tinycolor('#66cdaa'),
+				tinycolor('#9932cc'),
+				tinycolor('#ff0000'),
+				tinycolor('#ff4500'),
+				tinycolor('#00ced1'),
+				tinycolor('#ff8c00'),
+				tinycolor('#ffa500'),
+				tinycolor('#ffd700'),
+				tinycolor('#6a5acd'),
+				tinycolor('#ffff00'),
+				tinycolor('#c71585'),
+				tinycolor('#0000cd'),
+				tinycolor('#7cfc00'),
+				tinycolor('#40e0d0'),
+				tinycolor('#00ff00'),
+				tinycolor('#ba55d3'),
+				tinycolor('#00fa9a'),
+				tinycolor('#8a2be2'),
+				tinycolor('#00ff7f'),
+				tinycolor('#4169e1'),
+				tinycolor('#e9967a'),
+				tinycolor('#dc143c'),
+				tinycolor('#00ffff'),
+				tinycolor('#00bfff'),
+				tinycolor('#f4a460'),
+				tinycolor('#9370db'),
+				tinycolor('#0000ff'),
+				tinycolor('#a020f0'),
+				tinycolor('#f08080'),
+				tinycolor('#adff2f'),
+				tinycolor('#ff6347'),
+				tinycolor('#d8bfd8'),
+				tinycolor('#b0c4de'),
+				tinycolor('#ff7f50'),
+				tinycolor('#ff00ff'),
+				tinycolor('#1e90ff'),
+				tinycolor('#db7093'),
+				tinycolor('#f0e68c'),
+				tinycolor('#fa8072'),
+				tinycolor('#eee8aa'),
+				tinycolor('#ffff54'),
+				tinycolor('#6495ed'),
+				tinycolor('#dda0dd'),
+				tinycolor('#add8e6'),
+				tinycolor('#ff1493'),
+				tinycolor('#7b68ee'),
+				tinycolor('#f5f5dc'),
+				tinycolor('#afeeee'),
+				tinycolor('#ee82ee'),
+				tinycolor('#98fb98'),
+				tinycolor('#87cefa'),
+				tinycolor('#7fffd4'),
+				tinycolor('#ffdead'),
+				tinycolor('#ff69b4'),
+				tinycolor('#ffe4c4'),
+				tinycolor('#fffacd'),
+				tinycolor('#e6e6fa'),
+				tinycolor('#ffe4e1'),
+				tinycolor('#e0ffff'),
+				tinycolor('#ffb6c1')
+			]
+			*/
+			// Create by https://github.com/taketwo/glasbey.git
+			var tinyArr = [
+				tinycolor('rgb 255,255,255'),
+				tinycolor('rgb 0,0,0'),
+				tinycolor('rgb 215,0,0'),
+				tinycolor('rgb 140,60,255'),
+				tinycolor('rgb 2,136,0'),
+				tinycolor('rgb 0,172,199'),
+				tinycolor('rgb 152,255,0'),
+				tinycolor('rgb 255,127,209'),
+				tinycolor('rgb 108,0,79'),
+				tinycolor('rgb 255,165,48'),
+				tinycolor('rgb 0,0,157'),
+				tinycolor('rgb 134,112,104'),
+				tinycolor('rgb 0,73,66'),
+				tinycolor('rgb 79,42,0'),
+				tinycolor('rgb 0,253,207'),
+				tinycolor('rgb 188,183,255'),
+				tinycolor('rgb 149,180,122'),
+				tinycolor('rgb 192,4,185'),
+				tinycolor('rgb 37,102,162'),
+				tinycolor('rgb 40,0,65'),
+				tinycolor('rgb 220,179,175'),
+				tinycolor('rgb 254,245,144'),
+				tinycolor('rgb 80,69,91'),
+				tinycolor('rgb 164,124,0'),
+				tinycolor('rgb 255,113,102'),
+				tinycolor('rgb 63,129,110'),
+				tinycolor('rgb 130,0,13'),
+				tinycolor('rgb 163,123,179'),
+				tinycolor('rgb 52,78,0'),
+				tinycolor('rgb 155,228,255'),
+				tinycolor('rgb 235,0,119'),
+				tinycolor('rgb 45,0,10'),
+				tinycolor('rgb 94,144,255'),
+				tinycolor('rgb 0,199,32'),
+				tinycolor('rgb 88,1,170'),
+				tinycolor('rgb 0,30,0'),
+				tinycolor('rgb 154,71,0'),
+				tinycolor('rgb 150,159,166'),
+				tinycolor('rgb 155,66,92'),
+				tinycolor('rgb 0,31,50'),
+				tinycolor('rgb 200,196,0'),
+				tinycolor('rgb 255,208,255'),
+				tinycolor('rgb 0,190,154'),
+				tinycolor('rgb 55,21,255'),
+				tinycolor('rgb 45,37,37'),
+				tinycolor('rgb 223,88,255'),
+				tinycolor('rgb 190,231,192'),
+				tinycolor('rgb 127,69,152'),
+				tinycolor('rgb 82,79,60'),
+				tinycolor('rgb 216,102,0'),
+				tinycolor('rgb 100,116,56'),
+				tinycolor('rgb 193,115,136'),
+				tinycolor('rgb 110,116,138'),
+				tinycolor('rgb 128,157,3'),
+				tinycolor('rgb 190,139,101'),
+				tinycolor('rgb 99,51,57'),
+				tinycolor('rgb 202,205,218'),
+				tinycolor('rgb 108,235,131'),
+				tinycolor('rgb 34,64,105'),
+				tinycolor('rgb 162,127,255'),
+				tinycolor('rgb 254,3,203'),
+				tinycolor('rgb 118,188,253'),
+				tinycolor('rgb 217,195,130'),
+				tinycolor('rgb 206,163,206'),
+				tinycolor('rgb 109,80,0'),
+				tinycolor('rgb 0,105,116'),
+				tinycolor('rgb 71,159,94'),
+				tinycolor('rgb 148,198,191'),
+				tinycolor('rgb 249,255,0'),
+				tinycolor('rgb 192,84,69'),
+				tinycolor('rgb 0,101,60'),
+				tinycolor('rgb 91,80,168'),
+				tinycolor('rgb 83,32,100'),
+				tinycolor('rgb 79,95,255'),
+				tinycolor('rgb 126,143,119'),
+				tinycolor('rgb 185,8,250'),
+				tinycolor('rgb 139,146,195'),
+				tinycolor('rgb 179,0,53'),
+				tinycolor('rgb 136,96,126'),
+				tinycolor('rgb 159,0,117'),
+				tinycolor('rgb 255,222,196'),
+				tinycolor('rgb 81,8,0'),
+				tinycolor('rgb 26,8,0'),
+				tinycolor('rgb 76,137,182'),
+				tinycolor('rgb 0,223,223'),
+				tinycolor('rgb 200,255,250'),
+				tinycolor('rgb 48,53,21'),
+				tinycolor('rgb 255,39,71'),
+				tinycolor('rgb 255,151,170'),
+				tinycolor('rgb 4,0,26'),
+				tinycolor('rgb 201,96,177'),
+				tinycolor('rgb 195,162,55'),
+				tinycolor('rgb 124,79,58'),
+				tinycolor('rgb 249,158,119'),
+				tinycolor('rgb 86,101,100'),
+				tinycolor('rgb 209,147,255'),
+				tinycolor('rgb 45,31,105'),
+				tinycolor('rgb 65,27,52'),
+				tinycolor('rgb 175,147,152'),
+				tinycolor('rgb 98,158,153')
+			]
+
+			// var tiny = tinycolor(color);
+
+			// var output = [
+			// 	"hex:\t" + tiny.toHexString(),
+			// 	"hex8:\t" + tiny.toHex8String(),
+			// 	"rgb:\t" + tiny.toRgbString(),
+			// 	"rgb%:\t" + tiny.toPercentageRgbString(),
+			// 	"rgb.:\t" + tiny.toPointRgbString(),
+			// 	"hsl:\t" + tiny.toHslString(),
+			// 	"hsv:\t" + tiny.toHsvString(),
+			// 	"name:\t" + (tiny.toName() || "none"),
+			// 	"format:\t" + (tiny.getFormat()),
+			// 	"format string:\t" + tiny.toString(),
+			// ].join("\n");
+
+			let ss = "";
+			let codeOutput = document.querySelector("#my-output");
+			for (t in tinyArr) {
+				let s = tinyArr[t].toPointRgbString() + "\n";
+				// console.log(s);
+				ss += s;
+			}
+			if (codeOutput) {
+				codeOutput.textContent = ss;
+			}
+		}
+
 		function colorChange(color) {
 			var tiny = tinycolor(color);
 
@@ -17,6 +254,8 @@
 				"hex:\t" + tiny.toHexString(),
 				"hex8:\t" + tiny.toHex8String(),
 				"rgb:\t" + tiny.toRgbString(),
+				"rgb%:\t" + tiny.toPercentageRgbString(),
+				"rgb.:\t" + tiny.toPointRgbString(),
 				"hsl:\t" + tiny.toHslString(),
 				"hsv:\t" + tiny.toHsvString(),
 				"name:\t" + (tiny.toName() || "none"),
@@ -86,6 +325,7 @@
 
 			function onchange() {
 				colorChange(color.value);
+				color100();
 			}
 			colorChange({ r: 150, g: 0, b: 100 });
 
@@ -140,6 +380,8 @@
 				<p>And I'll tell you what I know about it:</p>
 			</div>
 
+			<h3>This is my 100 color:</h3>
+			<pre id='my-output'></pre>
 			<pre id='code-output'></pre>
 
 			<div id='filter-output'>
